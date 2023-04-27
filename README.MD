@@ -4,8 +4,14 @@ This repository stores different projects made in bash, independent of each othe
 
 ## HTB Explorer
 
-This search engine allows us to filter by keywords for the machines we solve from the HackTheBox platform, all from the console.
+This search engine allows us to filter by keywords for the machines listed by the content creator [s4vitar](https://www.youtube.com/c/s4vitar) from the HackTheBox platform. You can filter by difficulty and Operative System at the same time.
 
 ```bash
-./define usage
+./htb_explorer.sh -h | -u | -y <name> | -n <name> | -d <Easy/Medium/Hard/Insane> | -o <os> | -s "<Skill>"
+```
+
+### Example
+
+```bash
+./htb_explorer.sh -d Medium -o Linux
 ```
